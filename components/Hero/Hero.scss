@@ -1,0 +1,320 @@
+/*
+.header {
+  background: linear-gradient(
+      to bottom right,
+      rgba(72, 72, 212, 0),
+      rgba(241, 104, 104, 0)
+    ),
+    url("/header-background.webp") center center no-repeat;
+  background-size: cover;
+}
+*/
+
+/*
+CLASES BOOTSTRAP:
+d-flex 
+justify-content-end 
+position-absolute
+p-0
+*/
+
+$h1_header: #000;
+$p_header: #000;
+$backgroundHeader: #fff;
+
+.header{
+  background-color: $backgroundHeader;
+}
+
+.header .header-content {
+  padding-top: $heightHeader + 20px;
+  text-align: center;
+  height: 100%;
+  max-height: 100%;
+}
+.header .header-content .contElements{
+  height: 100%;
+}
+
+
+.header .text-container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.header h1 {
+  line-height: 1.25;
+  font-weight: 900;
+  font-size: 1.875rem;
+}
+
+.header .text-container p{
+  color: #718096;
+  line-height: 1.5;
+}
+
+
+
+.contBotons{
+  justify-content: center;
+  margin-bottom: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.btnPrincipalHeader{
+  padding: 1rem 2rem;
+  font-weight: 700;
+  align-self: flex-start;
+  border-radius: .375rem;
+  background-color: $primary;
+  color: #fff;
+  border: none;
+}
+        .btnP1{
+          margin-bottom: 1rem;
+        }
+
+
+.header #js-rotating {
+  color: #40e0ee;
+}
+
+.header .p-large {
+  color: $p_header;
+  font-display: swap;
+}
+
+.header .btn-solid-lg {
+  display: inline-block;
+  padding: 1.375rem 2.625rem 1.375rem 2.625rem;
+  border: 0.125rem solid #00c9db;
+  border-radius: 2rem;
+  background-color: #00c9db;
+  color: #fff;
+  font: 700 0.75rem/0 "Montserrat", sans-serif;
+  font-display: swap;
+  text-decoration: none;
+  transition: all 0.2s;
+  margin-right: 0.5rem;
+  margin-bottom: 1.25rem;
+}
+
+.btn-solid-lg:hover {
+  background-color: transparent;
+  color: #00c9db;
+  text-decoration: none;
+}
+
+.image-container {
+  height: auto;
+  max-height: none;
+  width: 100%;
+  max-width: 100%;
+  display: block;
+}
+
+.image-container img {
+  max-height: none;
+  width: auto; 
+  max-width: 100%;
+  height: auto;
+}
+
+
+  //vectores fondo
+  .vectorFondo1Cuadro{
+    display: none;
+  }
+  .vectorFondo2Cuadros{
+    display: none;
+  }
+
+
+
+/* Media querys */
+
+
+@media (min-width: 340px){
+  .contBotons{
+    flex-direction: row;
+  }
+
+  .btnP1{
+    margin-right: 1rem;
+    margin-bottom: 0;
+  }
+  
+}
+
+@media (min-width: 576px){
+
+  
+}
+
+@media (min-width: 768px) {
+  .p-heading {
+    width: 85%;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+}
+
+@media (min-width: 992px) {
+  .p-heading {
+    width: 65%;
+  }
+
+  
+  .contElements .ourRowStyles{
+    padding-left: 2rem;
+  }
+
+  .headerCol1, .headerCol2{
+    padding: 0 !important;
+  }
+  
+  .header .text-container {
+    padding-left: 5rem;
+    margin-right: -1rem;
+  }
+
+    .header .text-container h1 {
+      font-size: 2.85rem;
+    }
+
+    .header .text-container p{
+      font-size: 1.25rem;
+    }
+
+    .contBotons{
+      justify-content: start;
+    }
+
+
+  .header .header-content {
+    text-align: left;
+  }
+
+  .image-container {
+    width: auto;
+    max-width: none;
+    height: 100%;
+    max-height: 100%;
+    position: absolute;
+    display: block;
+    padding: 4rem 0 1rem;
+  }
+  
+  .image-container img {
+    max-width: none;
+    height: auto;
+    max-height: 100%;
+    width: auto; 
+    margin-left: -1rem;
+  }
+
+
+  //vectores fondo
+  .vectorFondo1Cuadro{
+    display: inline;
+  }
+  .vectorFondo2Cuadros{
+    display: inline;
+  }
+
+}
+
+
+.vectorFondo1Cuadro{
+  position: absolute;
+  max-width: 30rem;
+  margin-left: -25rem;
+  margin-top: 5rem;
+}
+/*por qué coño no funciona esto ahhh*/
+@media (min-width: 1140px) {
+  
+  .vectorFondo1Cuadro{
+    margin-left: -23rem;
+  }
+
+}
+
+@media (min-width: 1200px) {
+
+  
+
+  .p-heading {
+    width: 44%;
+  }
+
+  .header .text-container {
+  }
+
+  .ourContainer1 {
+    max-width: 1140px;
+  }
+
+  .vectorFondo1Cuadro{
+    margin-top: 10rem;
+  }
+
+}
+
+@media (min-width: 1400px) {
+
+
+
+  .header .text-container h1  {
+    font-size: 3.5rem;
+  }
+  
+  .image-container {
+    padding: 6rem 0 1rem;
+  }
+}
+
+@media (min-width: 1500px) {
+  .header .text-container {
+    padding-left: 0rem;
+  }
+
+  .header .text-container h1  {
+    font-size: 4rem;
+  }
+
+  .vectorFondo1Cuadro{
+    margin-left: -20rem;
+    margin-top: 16rem;
+  }
+}
+
+@media (min-width: 1790px) {
+  .vectorFondo1Cuadro{
+    margin-left: -18rem;
+    margin-top: 20rem;
+  }
+  .image-container {
+    padding: 7rem 0 1rem;
+  }
+}
+
+
+
+
+
+.vectorFondo2Cuadros{
+  top: 0;
+  left: 0;
+  width: 100vw;
+  max-width: 48rem;
+  margin-top: -20rem;
+  margin-right: -32.4rem
+}
+
+
+

@@ -1,0 +1,45 @@
+.imagen_descarga {
+  width: 100%;
+}
+
+.columna_descarga {
+  margin-top: 40px;
+}
+
+.videotutorial {
+  display: flex;
+  justify-content: center;
+}
+
+.title {
+  margin-bottom: 35px;
+}
+@media (max-width: 767px) {
+  .title {
+    margin-bottom: 25px;
+  }
+}
+.title .titlered {
+  margin: 0;
+  color: black;
+  position: relative;
+  z-index: 1;
+  font-weight: 600;
+  font-size: 30px;
+  display: inline-block;
+  vertical-align: top;
+}
+.theme-light .title .titlered {
+  color: #0b0b13;
+}
+.title .titlered:after {
+  content: "";
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  background: #01b3e9;
+  position: absolute;
+  top: -8px;
+  left: -15px;
+  z-index: -1;
+}

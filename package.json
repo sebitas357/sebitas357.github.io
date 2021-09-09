@@ -1,0 +1,35 @@
+{
+  "name": "portafolio",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "export": "next build && next export",
+    "start": "next start"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^1.2.34",
+    "@fortawesome/free-brands-svg-icons": "^5.15.2",
+    "@fortawesome/free-solid-svg-icons": "^5.15.2",
+    "@fortawesome/react-fontawesome": "^0.1.14",
+    "@netlify/plugin-nextjs": "^1.1.0",
+    "aos": "^2.3.4",
+    "bootstrap": "^4.6.0",
+    "emailjs-com": "^2.6.4",
+    "lodash": "^4.17.21",
+    "moment": "^2.29.1",
+    "next": "10.0.5",
+    "next-pwa": "^5.2.24",
+    "node-sass": "^5.0.0",
+    "react": "17.0.1",
+    "react-dom": "17.0.1",
+    "react-markdown": "^5.0.3",
+    "react-player": "^2.6.2",
+    "react-reveal": "^1.2.2",
+    "react-slick": "^0.28.1",
+    "react-slidy": "^4.3.3",
+    "reactstrap": "^8.9.0",
+    "slick-carousel": "^1.8.1"
+  }
+}

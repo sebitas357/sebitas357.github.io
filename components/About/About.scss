@@ -1,0 +1,124 @@
+/* Button */
+a.main-button {
+  font-size: 14px;
+  border-radius: 25px;
+  padding: 15px 25px;
+  background-color: $primary;
+  text-transform: uppercase;
+  color: #fff;
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-decoration: none !important;
+  -webkit-transition: all 0.3s ease 0s;
+  -moz-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+
+a.main-button:hover {
+  background-color: $font-grey;
+  color: $font-light;
+}
+
+#about {
+  position: relative;
+  z-index: 9;
+}
+
+@media (max-width: 992px) {
+  .features-item {
+    margin-bottom: 45px;
+  }
+}
+
+.features-item {
+  border-radius: 5px;
+  padding: 60px 30px;
+  text-align: center;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.features-item h2 {
+  z-index: 9;
+  position: absolute;
+  top: 15px;
+  left: 45px;
+  font-size: 100px;
+  font-weight: 600;
+  color: #e5f6fd;
+}
+
+.features-item img {
+  z-index: 10;
+  position: relative;
+  max-width: 100%;
+  margin-bottom: 40px;
+}
+
+.features-item h3 {
+  margin-top: 0px;
+  font: 700 24px "Montserrat", sans-serif;
+  color: #1e1e1e;
+  margin-bottom: 25px;
+  font-display: swap;
+}
+
+.features-item .main-button {
+  margin-top: 35px;
+  display: inline-block;
+}
+
+/*
+---------------------------------------------
+promotion
+---------------------------------------------
+*/
+@media (max-width: 768px) {
+  .margin__mobile {
+    padding-top: 40px;
+  }
+}
+.left-image-decor {
+  background-image: url(/left-bg-decor.webp);
+  background-repeat: no-repeat;
+  position: absolute;
+  width: 100%;
+  display: inline-block;
+  height: 110%;
+  margin-top: -200px;
+}
+
+#promotion {
+  padding: 100px 0px;
+}
+
+#promotion .left-image {
+  align-self: center;
+}
+
+#promotion .right-text ul {
+  padding: 0;
+  margin: 0;
+}
+
+#promotion .right-text ul li {
+  display: inline-block;
+  margin-bottom: 60px;
+}
+
+#promotion .right-text ul li:last-child {
+  margin-bottom: 0px;
+}
+
+#promotion .right-text img {
+  display: inline-block;
+  float: left;
+  margin-right: 30px;
+}
+
+#promotion .right-text h4 {
+  font: 600 22px "Montserrat", sans-serif;
+  color: #1e1e1e;
+  margin-bottom: 15px;
+  margin-top: 3px;
+}

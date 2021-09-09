@@ -1,0 +1,44 @@
+.header-button {
+  padding: 8px 20px;
+  border-radius: 4px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.header-button:hover {
+  padding: 8px 20px;
+  transition: all 0.3s ease-out;
+  background: $primary;
+  transition: 250ms;
+  color: $text_button_navbar;
+}
+
+.header-button--primary {
+  border: 2px solid $primary;
+  border-radius: 50px !important;
+  text-decoration: none !important;
+}
+
+.header-button--outline {
+  color: $text_button_navbar;
+  padding: 8px 20px;
+  border-radius: 4px;
+  border: 1px solid $primary;
+  transition: all 0.3s ease-out;
+}
+
+.header-button--medium {
+  padding: 8px 20px;
+  border-radius: 4px;
+  font-size: 18px;
+  color: $text_button_navbar;
+}
+
+.header-button-large {
+  padding: 12px 26px;
+  border-radius: 4px;
+  font-size: 20px;
+  color: $text_button_navbar;
+}

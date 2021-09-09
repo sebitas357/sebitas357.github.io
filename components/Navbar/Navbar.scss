@@ -1,0 +1,246 @@
+$text_color_navar: #000;
+$text_button_navbar: rgb(221, 8, 8);
+
+//
+$backgroundNavbar: transparent;
+$backgroundMenuMobile: #fff;
+
+
+.navbarDefault {
+  background: $backgroundNavbar;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 2000;
+}
+
+.navbarScrolled {
+  background: #fff;
+  border-bottom: solid 0.1px gray;
+  transition: all 0.5s;
+
+}
+
+.navbarItems {
+  font-weight: 700;
+  width: 100%;
+  margin: auto;
+  height: $heightHeader;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+
+
+
+
+  a {
+
+    .navbar-icon {
+      justify-self: start;
+      cursor: pointer;
+      font-weight: 900;
+      margin: 0;
+      display: flex;
+      align-items: center;
+
+      .navarIconSvg{
+        text-decoration: none;
+        color: $primary;
+        font-weight: 900;
+      }
+
+      .stackdigital{
+        color: $text_color_navar;
+        font-size: 1.25rem;
+      }
+        .stackdigital > span{
+          color: $tertiary
+        }
+
+      .fa-react {
+        margin-right: 0.5rem;
+        font-size: 1.8rem;
+      }
+    }
+  }
+}
+
+.menu-icon {
+  display: none;
+
+  .fa-bars {
+    color: $primary;
+  }
+}
+.nav-menu {
+  display: grid;
+  grid-template-columns: repeat(5, auto);
+  grid-gap: 10px;
+  list-style: none;
+  text-align: center;
+  justify-content: end;
+  margin: 0;
+}
+
+.nav-links {
+  color: $text_color_navar ;
+  text-decoration: none ;
+  padding: 0.5rem 1rem ;
+
+  &:hover {
+    color: $primary;
+    text-decoration: none !important;
+  }
+}
+
+.nav-links-mobile {
+  display: none;
+}
+
+@media screen and (max-width: 960px) {
+  .navbarItems {
+    position: relative;
+    //este ancho determina el responsive
+    width: 100%;
+  }
+
+  .nav-menu {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 500px;
+    position: absolute;
+    top: 80px;
+    left: -100%;
+    opacity: 1;
+    transition: all 0.5s ease;
+
+    &:first-of-type {
+      margin-top: 0px;
+    }
+  }
+
+  .nav-menu.active {
+    background: $backgroundMenuMobile;
+    left: 0;
+    opacity: 1;
+    transition: all 0.5s ease;
+    z-index: 1;
+  }
+
+  .nav-links {
+    text-align: center;
+    padding: 1.6rem !important;
+    width: 100%;
+    display: table;
+  }
+
+  .nav-links:hover {
+    background-color: $primary;
+    border-radius: 0;
+  }
+
+  .navbar-icon {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translate(25%, 50%);
+  }
+
+  .menu-icon {
+    display: flex;
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translate(-100%, 60%);
+    font-size: 1.8rem;
+    cursor: pointer;
+  }
+  
+
+  .fa-times {
+    color: $primary;
+    font-size: 2rem;
+  }
+
+  .nav-links-mobile {
+    display: block;
+    text-align: center;
+    padding: 1.5rem;
+    margin: 0.2rem auto;
+    border: 2px solid $primary;
+    border-radius: 50px;
+    width: 80%;
+    background: transparent;
+    text-decoration: none !important;
+    color: $primary;
+    font-size: 1.5rem;
+  }
+
+  .nav-links-mobile:hover {
+    background: $primary;
+    color: $font-light;
+    transition: 250ms;
+  }
+
+  a.header-button {
+    display: none;
+  }
+}
+
+
+
+
+
+//esto para los dos botones de la derecha
+
+.contBtnsNavbar{
+  display: none;
+}
+
+@media (min-width: 992px){
+  .contBtnsNavbar{
+    display: flex;
+  }
+}
+
+
+
+.first_boton{
+  color: #fff;
+  background-color: transparent;
+  padding: .75rem 1.25rem;
+  margin-right: .75rem;
+  border: none;
+  border-radius: .25rem;
+  line-height: 1;
+  font-size: .875rem;
+  height: 100%;
+  font-weight: 700;
+  display: inline-block;
+
+}
+  .first_boton_scrolled{
+    color: #000;
+    transition: all 0.5s;
+  }
+
+.secon_boton{
+  padding: .75rem 1.25rem;
+  background-color: #fff;
+  color: $primary;
+  border: none;
+  border-radius: .25rem;
+  line-height: 1;
+  font-size: .875rem;
+  height: 100%;
+  font-weight: 700;
+  display: inline-block;
+}
+  .secon_boton_scrolled{
+    color: #fff;
+    background-color: $primary;
+    transition: all 0.5s;
+  }

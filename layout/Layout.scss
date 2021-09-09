@@ -1,0 +1,19 @@
+.social {
+  width: 48px;
+  position: fixed;
+  top: 50px;
+  right: 0;
+  top: 50%;
+  height: 205px;
+  margin-top: -100px;
+  z-index: 9999;
+
+  .icono {
+    width: 45px;
+    margin-bottom: 10px;
+  }
+
+  .margen_superior {
+    margin-top: 120px;
+  }
+}
